@@ -19,3 +19,38 @@ def age_check():
         Entrada invalida
     """
     pass
+    '''
+    edad = int(input())
+    edad_limite= int(input())
+    
+    if edad and edad_limite > 0:
+        if edad <= 18:
+            print('Eres menor de edad')
+        elif edad <= edad_limite:
+            print('Entrada invalida')
+    else:
+        print('Entrada invalida')  
+    '''
+    '''
+    edad = int(input())
+    edad_limite= int(input())
+    if edad and edad_limite > 0:
+        if edad >= edad_limite:
+            print("Eres mayor de edad")
+        else:
+            print("Eres menor de edad")
+    else:
+        print("Entrada invalida")
+    '''  
+    #problema es que entre en el apartado de  if, ya que -5 entre en que ambos sean > 0 cuando no lo son
+    edad = int(input())
+    edad_limite= int(input())
+    
+    if edad <= 0 or edad_limite <= 0:
+        print("Entrada invalida")
+    elif edad >= edad_limite:
+        print("Eres mayor de edad")
+    else:
+        print("Eres menor de edad")
+
+#age_check()

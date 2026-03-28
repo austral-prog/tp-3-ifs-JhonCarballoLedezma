@@ -23,3 +23,27 @@ def calculator():
         Operacion invalida
     """
     pass
+    numero1= float(input())
+    numero2= float(input())
+    operacion = input()
+    
+    if operacion == "+":
+        resultado = numero1 + numero2
+        print(f"Resultado: {resultado}")
+    elif operacion == "-":
+        resultado = numero1 - numero2
+        print(f"Resultado: {resultado}") 
+    elif operacion == "*":
+        resultado = numero1 * numero2
+        print(f"Resultado: {resultado}") 
+    elif operacion == "/":
+        if numero2 == 0:
+            print("Error: division por cero")
+        else:
+            resultado = numero1 / numero2
+            print(f"Resultado: {resultado}") 
+    else:
+        print("Operacion invalida")
+        
+        
+#calculator()
